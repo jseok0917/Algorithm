@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+SELECT f.flavor
+FROM FIRST_HALF `f` LEFT OUTER JOIN ICECREAM_INFO `i` ON f.flavor = i.flavor
+WHERE i.INGREDIENT_TYPE = 'fruit_based' AND TOTAL_ORDER > 3000
+ORDER BY f.TOTAL_ORDER DESC;
