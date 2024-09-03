@@ -15,10 +15,10 @@ import (
 // 각 가방에는 최대 1개의 보석만 들어갈 수 있다.
 var N, K int
 
-// IntHeap은 heap.Interface를 구현하는 int 슬라이스입니다.
+// IntHeap은 heap.Interface를 구현하는 int 슬라이스
 type IntHeap []int
 
-// Len()은 힙의 길이를 반환합니다.
+// Len()은 힙의 길이를 반환
 func (h IntHeap) Len() int { return len(h) }
 
 // // Less()는 h[i]가 h[j]보다 작은지 확인 (최소 힙의 경우)
