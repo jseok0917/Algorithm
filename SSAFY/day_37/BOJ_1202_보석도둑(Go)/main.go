@@ -21,21 +21,21 @@ type IntHeap []int
 // Len()은 힙의 길이를 반환합니다.
 func (h IntHeap) Len() int { return len(h) }
 
-// // Less()는 h[i]가 h[j]보다 작은지 확인합니다. (최소 힙의 경우)
+// // Less()는 h[i]가 h[j]보다 작은지 확인 (최소 힙의 경우)
 // func (h IntHeap) Less(i, j int) bool { return h[i] < h[j] }
 
-// Less()는 h[i]가 h[j]보다 작은지 확인합니다. (최대 힙의 경우)
+// Less()는 h[i]가 h[j]보다 작은지 확인 (최대 힙의 경우)
 func (h IntHeap) Less(i, j int) bool { return h[i] > h[j] }
 
-// Swap()은 h[i]와 h[j]의 위치를 바꿉니다.
+// Swap()은 h[i]와 h[j]의 위치를 변경
 func (h IntHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }
 
-// Push()는 힙에 새로운 요소를 추가합니다.
+// Push()는 힙에 새로운 요소를 추가
 func (h *IntHeap) Push(x interface{}) {
 	*h = append(*h, x.(int))
 }
 
-// Pop()은 힙에서 우선순위가 가장 높은 요소를 제거하고 반환합니다.
+// Pop()은 힙에서 우선순위가 가장 높은 요소를 제거하고 반환
 func (h *IntHeap) Pop() interface{} {
 	old := *h
 	n := len(old)
