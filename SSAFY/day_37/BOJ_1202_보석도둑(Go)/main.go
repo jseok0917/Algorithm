@@ -21,7 +21,7 @@ type IntHeap []int
 // Len()은 힙의 길이를 반환
 func (h IntHeap) Len() int { return len(h) }
 
-// // Less()는 h[i]가 h[j]보다 작은지 확인 (최소 힙의 경우)
+// Less()는 h[i]가 h[j]보다 작은지 확인 (최소 힙의 경우)
 // func (h IntHeap) Less(i, j int) bool { return h[i] < h[j] }
 
 // Less()는 h[i]가 h[j]보다 작은지 확인 (최대 힙의 경우)
